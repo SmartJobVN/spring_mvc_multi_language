@@ -18,7 +18,10 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver"/>
+    <bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
+        <!--<property name="defaultLocale" value="vi_VN"/>-->
+        <!--<property name="defaultLocale" value="en_US"/>-->
+    </bean>
 
     <bean id="messageSource"
           class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
